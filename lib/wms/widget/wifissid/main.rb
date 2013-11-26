@@ -56,8 +56,8 @@ class Wms::Widget::Wifissid::Main < Wms::Widget::Base
     options = {
       #:device_id => "12345678",
       :type => "wifi_accesspoint_info",
-      :begin => @begin,
-      :end => @end
+      # :begin => @begin,
+      # :end => @end
     }
     @events = get_events(options)
 
