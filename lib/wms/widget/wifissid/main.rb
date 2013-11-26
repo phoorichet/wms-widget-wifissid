@@ -64,12 +64,12 @@ class Wms::Widget::Wifissid::Main < Wms::Widget::Base
     (@events.count.to_i).times do |i|
       wifi_arr = Set.new []
       cur = @events[i]
-      wifi_lst = cur["wifi_list"]
+      wifi_lst = cur["list"]
       wifi_lst.each do |n|
       wifi_arr.add(n["SSID"])
       end 
       analytic = {
-        :device_id => "123456789",
+        :device_id => cur["device_id"],
         :widget_id => @widget.id,
         :user_id => @widget.user.id,
         :timestamp => Time.now,
