@@ -1,6 +1,6 @@
 # Wms::Widget::Wifissid
 
-TODO: Write a gem description
+A widget for [WMS](https://github.com/phoorichet/wms). It reads "wifi-location" events and filters out a list of unique wifi ssid.
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+This gem will be called in WMS.
 
 ## Contributing
 
